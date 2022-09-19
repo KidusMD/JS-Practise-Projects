@@ -1,16 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #efedd6;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    overflow: hidden;
     margin: 0;
-    overflow-x: hidden;
+}
+
+.bg {
+    background: url('images/candidate-fairness_32620.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
 }
